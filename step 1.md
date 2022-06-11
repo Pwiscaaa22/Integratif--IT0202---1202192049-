@@ -6,33 +6,33 @@
 
 * Buka website https://windows.php.net/download#php-8.1 untuk mendownload php, dan pilih file zip Thread Safe.
 
-  ![](pict step 1/1.png)
+  ![](pict/1.png)
 
 
 
 * Extract file php, lalu copy dan paste di lokasi "C:\Program Files". Kemudian cari file bernama "php.ini development", lalu buat salinan dan rename file salinan tersebut menjadi "php.ini". Buka text editor, lalu ubah setting menjadi seperti gambar dibawah ini, dan simpan.
 
-  ![](pict step 1/2.png)
+  ![](pict/2.png)
 
-​		![](pict step 1/3.png)
+  ![](pict/3.png)
 
 
 
 * Tekan Windows dan klik Environment, kemudian buka The Edit System Environment Variables, dan pilih Environment Variables
 
-  ![](pict step 1/4.png)
+  ![](pict/4.png)
 
   
 
 * Pilih variable path untuk menambahkan alamat dari file php, kemudian pilih ok.
 
-  ![](pict step 1/5.png)
+  ![](pict/5.png)
 
 
 
 * Buka terminal dan ketikkan php -v. Jika tampilan yang muncul seperti pada gambar dibawah ini, maka tandanya php telah berhasil terinstall.
 
-  ![](pict step 1/6.png)
+  ![](pict/6.png)
 
 
 
@@ -40,13 +40,13 @@
 
 * Buka website https://getcomposer.org/download/ untuk mendownload composer
 
-  ![](pict step 1/7.png)
+  ![](pict/7.png)
 
 
 
 * Install file composer yang sudah di download. Selanjutnya buka terminal dan ketik "composser", maka akan muncul tampilan seperti pada gambar dibawah ini. Ini menandakan bahwa composer sudah berhasil di install.
 
-  ![](pict step 1/8.png)
+  ![](pict/8.png)
 
 
 
@@ -63,12 +63,12 @@
   composer create-project laravel/laravel nama_project
   ```
 
-  ![](pict step 1/9.png)
+  ![](pict/9.png)
 
-![](pict step 1/10.png)
+  ![](pict/10.png)
 
 
 
 * Copy server laravel, untuk dibuka di browser
 
-  ![](pict step 1/11.png)
+  ![](pict/11.png)
