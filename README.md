@@ -3,7 +3,7 @@
 
 ## Catharina Prisca Titi Larasati | 1202192049 | IT0202
 
-### First Step
+### Phase 1
 
 * Buka website https://windows.php.net/download#php-8.1 untuk mendownload php, dan pilih file zip Thread Safe.
 
@@ -36,3 +36,55 @@
   ```
   
 * Copy server laravel, untuk dibuka di browser
+
+
+
+
+
+
+
+
+### Phase 2
+
+* Buat database dengan menggunakan phpmyadmin
+* Ubah dan sesuaikan DB_DATABASE dengan nama database yang telah dibuat
+* Selanjutnya, buat 2 migration (migration untuk table Rss dan migration untuk table news), dengan script seperti dibawah ini : 
+    ```markdown
+  php artisan make:migration create_rss_table
+  ```
+
+ ```markdown
+  php artisan make:migration create_News_table
+  ```
+  
+* Tambahkan kolom name dan rul pada create_rss_table
+* Tambahkan kolom title, img_url, description, source_url, dan rss_id pada create_news_table
+* Agar migrasi yang telah dibuat tadi dapat berjalan sesuai dengan fungsinya, maka tambahkan perintah 
+
+    ```markdown
+  php artisan migrate
+    ```
+    
+* Selanjutnya, buatlah koneksi dengan database, dengan menggunakan seeder dan controller untuk table Rss dan News, dengan script
+
+
+    ```markdown
+  php artisan make:model Rss --seed --controller
+    ```
+
+
+* Tambahkan script seperti dibawah ini pada file Rss.php
+  ```markdown
+  protected $table = 'rss';
+    ```
+    
+* Ubah dan sesuaikanlah RssSeeder.php dan DatabaseSeeder.php
+* Cek koneksi dengan perintah seperti php artisan db:seed, dan cek phpmyadmin
+* Jalankan Perintah php artisan make:model News --controller
+* Dan tambahkan script protected $table='news' pada News.php. Ubah dan sesuaikan NewsController.php, dan web.php.
+* Berikutnya, cek localhost http://127.0.0.1:8000/aggregrate/1
+* Buat logic untuk get rss
+* Lakukan parsing xml to objecty
+* lalu cek localhost http://127.0.0.1:8000/aggregrate/1
+* Cek table news pada database
+* Jika sudah benar, isi tampilan localhost http://127.0.0.1:8000/aggregrate/1 akan berubah menjadi berita yang sudah dicantumkan.
